@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="progress_timer">Timer</string>
+    <string name="text_timer">Timer</string>
+    <string name="text_reward">Получите награду</string>
+    <string name="text_back">Back</string>
+    <string name="text_work">Work</string>
+    <string name="text_minutes">Minutes</string>
+    <string name="text_result">Result</string>
+    <string name="text_setting">
+        Предложение для повышения вашей производительности.
+
+        Каждая выполненная задача повышает количество ваших монеток, которые вы можете потратить на повышения своего уровня полезности.
+
+        Цените свое время.
+    </string>
+
+    <string name="button_timer">Start</string>
+    <string name="button_reset">Reset</string>
+    <string name="button_install">Install</string>
+    <string name="button_up">Up</string>
+
+    <string name="level">1</string>
+    <string name="coins">0</string>
+    <string name="level_text">Уровень</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/dialogfon_false"
+    android:background="@drawable/fon"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/dialogfon1_false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:onClick="NewActivityLevel_1_dialog"
+            android:id="@+id/btn_close_false"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="end"
+            android:background="@drawable/style_close"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/krestik"
+            android:layout_weight="10">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/failedresult"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="25sp"
+            android:background="@drawable/gamelevels"
+            android:textColor="@color/white"
+            >
+
+        </TextView>
+
+        <Button
+            android:onClick="NewActivityLevel_2_dialog"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gamelevels"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/dictinary"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

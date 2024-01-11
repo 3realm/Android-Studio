@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DictinaryLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dictinary">
+
+    <LinearLayout
+        android:id="@+id/с1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/с2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="40dp"
+            android:paddingEnd="40dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/с3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:textAllCaps="true"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:text="@string/btn_set"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gamelevels"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:textAllCaps="true"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:text="@string/btn_sort"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gamelevels"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:textAllCaps="true"
+                    android:layout_width="70dp"
+                    android:layout_height="100dp"
+                    android:text="@string/btn_delall"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gamelevels"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/с32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:paddingLeft="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/text_scroll"
+                android:layout_width="282dp"
+                android:layout_height="352dp"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:textSize="25sp"
+                    android:id="@+id/dictinary_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/c322"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:selectAllOnFocus="true"
+                    android:id="@+id/editrussian"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/russian"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:selectAllOnFocus="true"
+                    android:id="@+id/editdeutsch"
+                    android:layout_width="150dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:hint="@string/deutsch"
+                    android:inputType="textPersonName"
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="end"
+                android:padding="15dp"
+                android:id="@+id/c323"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gamelevels"
+                    android:text="@string/add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:background="@drawable/gamelevels"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="35dp"
+                    android:textAllCaps="false"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:text="@string/delete" />
+
+                <Button
+                    android:id="@+id/backMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/gamelevels"
+                    android:onClick="NewActivity"
+                    android:text="@string/back"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
